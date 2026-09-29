@@ -1,0 +1,32 @@
+[project]
+name = "ai-document-intelligence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Suresh-k", email = "suresh091102@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi[standard]>=0.141.1",
+    "langchain>=1.4.2",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.0",
+    "langchain-qdrant>=1.1.0",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.12",
+    "psycopg[binary]>=3.3.6",
+    "pypdf>=6.19.0",
+    "python-multipart>=0.0.32",
+    "qdrant-client>=1.19.1",
+    "sqlalchemy>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+ai-document-intelligence = "ai_document_intelligence:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
